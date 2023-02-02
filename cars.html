@@ -5,40 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CSS Grid Demo</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Prestige Prague</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/alex-brush">
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/baskerville">
     <script src="script.js"></script>
 </head>
 
-<body>
+<body onload="plusSlides(0);">
     <header>
         <img src="images/logo2.png" />
-
+        <p>Prestige Prague</p>
         <nav>
             <ul>
                 <li><a href="index.html">la société</a></li>
                 <li><a href="cars.html">les véhicules</a></li>
                 <li><a href="#">le tarif</a></li>
-                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section>
-        <div>
-            <div>
-                    
-            </div>
+    <section id="info">
+        <div class="car-list">
+            <div class="car-text-1">some text</div>
+            <div class="car-image-1">an image</div>
         </div>
-        <div>
-            adfasf
+        <div class="car-list">
+            <div class="car-text">some text</div>
+            <div class="car-image">an image</div>
         </div>
+        <div class="car-list">
+            <div class="car-text-1">some text</div>
+            <div class="car-image-1">an image</div>
+        </div>
+
     </section>
+
     <footer>
-
+        <div class="ip" s>&copy;
+            <script>document.write(new Date().getFullYear())</script> prestige prague
+        </div>
     </footer>
-</body>
 
-</html>
+</body>

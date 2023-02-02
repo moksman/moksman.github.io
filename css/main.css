@@ -2,6 +2,7 @@ body,
 html {
   /* height: 100%; */
   margin: 0;
+
 }
 
 
@@ -12,20 +13,43 @@ html {
 header {
   background-color: #110e0d;
   text-align: center;
+  color: #fff;
+  height: 280px;
+
+}
+
+header p {
+  font-family: 'Alex Brush', sans-serif;
+  font-size: 20px;
 }
 
 nav {
-  background-color: #110e0d;
-  text-align: center
+  text-align: center;
+  /* overflow: hidden;
+  position: fixed;
+  z-index: 10;
+  min-width: 1000px; */
 }
 
 nav a {
   text-decoration: none;
+  font-family: Baskerville;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-right: 50px;
+  /* border: 2px #fff solid ; */
+
 }
+
+nav a:hover {
+  text-decoration: underline;
+  color: rgb(172, 43, 43);
+}
+
 
 nav ul {
   list-style-type: none;
-  display: inline;
+  /* display: inline; */
 }
 
 nav ul li {
@@ -34,15 +58,38 @@ nav ul li {
 
 nav ul li a {
   color: #d8cbc6;
-  padding: 15px;
+  /* padding: 15px; */
 }
 
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* 
+  CONTENT
+*/
+#info {
+  max-width: 650px;
+  position: relative;
+  margin: auto;
 
 }
+
+.info-title-1 {
+  font-family: 'Alex Brush';
+  font-size: 20px;
+  text-align: center;
+
+}
+
+.info-title-2 {
+  font-family: Baskerville, serif;
+  font-size: 14px;
+  text-align: center
+}
+
+.info-text {
+  font-family: Baskerville, serif;
+  font-size: 16px;
+  padding: 25px 0 40px 0;
+}
+
 
 /*--------------
 FOOTER
@@ -51,43 +98,152 @@ FOOTER
 footer {
   margin: auto;
   text-align: center;
+
+  max-width: 750px;
+  position: relative;
+  margin: auto;
+
 }
 
-.flex-container {
-  display: flex;
-  justify-content: space-around;
+/* 
+FOOTER GRID 
+*/
+.contact {
+  display: grid;
+  max-width: 750px;
+  /* grid-gap: 10px; */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "header header header"
+    "horaires address contact"
+    "footer  footer  footer";
+  background-color: #737373;
+  border: #000 1px solid;
+  /* color: #444; */
+}
+
+.contact-horaires {
+  grid-area: horaires;
+}
+
+.contact-address {
+  grid-area: address;
+}
+
+.content-contact {
+  grid-area: contact;
+}
+
+.contact-header {
+  grid-area: header;
+  padding: 10px;
+  font-family: Baskerville, serif;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+/*
+  CONTACT styles
+*/
+
+.contact-item-1 {
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  font-family: Baskerville, serif;
+  font-size: 12px;
+}
+
+.contact-item-2 {
+  font-size: 13px;
+}
+
+.contact-item-3 {
+  text-transform: uppercase;
+}
+
+.contact-item-4 {
+  font-weight: bold;
+}
+
+/* 
+Social media links 
+*/
+
+.social-media {
+  grid-area: footer;
+  /* border: rgb(121, 39, 39) solid; */
+  font-size: 24px;
+  font-family: Alex Brush;
   padding: 0;
   margin: 0;
-  list-style: none;
 }
 
-.flex-item {
-  padding: 5px;
-  margin-top: 10px;
-}
-
-footer ul {
+.social-media ul {
   display: flex;
   justify-content: center;
   list-style: none;
+  /* border: #000 solid; */
+  margin: 0;
 }
 
-footer ul li {
-  /* margin: 0 8px; */
-  padding: 10px;
+.social-media ul li {
+  margin: 0 8px;
 }
 
-footer ul li:first-child {
+.social-media ul li a {
+  color: #000;
+}
+
+
+/* .social-media ul li:first-child {
   margin-left: 0;
 }
 
-footer ul li:last-child {
+.social-media ul li:last-child {
   margin-right: 0;
+} */
+
+.ip {
+
+  font-family: Baskerville, serif;
+  font-size: 12px;
+  padding: 10px;
+  text-transform: capitalize;
 }
 
-footer p {
-  text-transform: uppercase;
-  font-size: 14px;
-  /* color: rgba(255, 255, 255, .6); */
-  /* margin-bottom: 10px; */
+
+.car-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "text image";
+  grid-column-gap: 10px;
+  /* background-color: darkgoldenrod; */
+  height: 100%;
+  width: 750px;
+
+}
+
+.car-text-1 {
+  grid-area: text;
+  background-color: #737373;
+}
+
+
+.car-image-1 {
+  grid-area: image;
+  background-color: #737373;
+}
+
+.car-text-2 {
+  grid-area: text;
+  background-color: #fff;
+}
+
+
+.car-image-2 {
+  grid-area: image;
+  background-color: #fff;
 }
