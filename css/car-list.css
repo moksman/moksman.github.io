@@ -2,20 +2,29 @@
     /* max-width: 750px; */
 }
 
+.link {
+    position: absolute;
+    /* width: 100%;
+    height: 100%; */
+    /* top: 0;
+    left: 0; */
+    z-index: 1;
+}
+
 .car-list {
     display: flex;
     flex-flow: row wrap;
-    background-color: #fff;
+    padding: 25px 50px;
 }
 
 .car-wrapper {
     width: 500px;
     display: grid;
-    /* grid-gap: 10px; */
     grid-template-columns: 1fr 2fr;
     -webkit-box-shadow: 5px 5px 15px 5px #272525;
     box-shadow: 5px 5px 15px 5px #272525;
     margin: 15px;
+    cursor: pointer;
 
 }
 
@@ -54,12 +63,18 @@
 .car-price-label {
     grid-column: 1;
     grid-row: 4;
+
+    padding: 0px 10px 0px 10px;
+    margin-left: 10px;
+    width: 100px;
+
     font-family: Arial, serif;
     font-size: 14px;
-    padding: 10px;
     font-weight: bold;
-    padding: 10px 10px 10px 5px;
-    margin: 0px;
+    color: #fff;
+    background-color: #000;
+
+    text-transform: capitalize;
 }
 
 .car-price {
@@ -76,11 +91,12 @@
 
 .car-image {
     grid-column: 2;
-    grid-row: 1/ 7;
-    width: 300px; 
+    grid-row: 1 / 6;
     padding: 10px;
-
+    text-align: end;
 }
+
+
 
 .box {
     /* border: #000 solid; */
