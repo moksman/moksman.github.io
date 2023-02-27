@@ -61,10 +61,13 @@ nav ul li a {
   /* padding: 15px; */
 }
 
+#content {
+}
+
 /* 
-  CONTENT
+  INDEX
 */
-#info {
+#presentation {
   max-width: 650px;
   position: relative;
   margin: auto;
@@ -212,38 +215,4 @@ Social media links
   font-size: 12px;
   padding: 10px;
   text-transform: capitalize;
-}
-
-
-.car-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "text image";
-  grid-column-gap: 10px;
-  /* background-color: darkgoldenrod; */
-  height: 100%;
-  width: 750px;
-
-}
-
-.car-text-1 {
-  grid-area: text;
-  background-color: #737373;
-}
-
-
-.car-image-1 {
-  grid-area: image;
-  background-color: #737373;
-}
-
-.car-text-2 {
-  grid-area: text;
-  background-color: #fff;
-}
-
-
-.car-image-2 {
-  grid-area: image;
-  background-color: #fff;
 }
